@@ -1,4 +1,4 @@
-# Robot Status
+# Robot Status for MentraOS
 
 This is an application that is designed for the MentraOS platform to run on the Even Realities G1. This app has not been tested on any other device that works with the MentraOS app, but it may work on other devices with minimal changes. The goal of this app is to pipe data from servo temps and battery percentage from a humanoid robot such as the Unitree G1 EDU into the smartglasses heads up display.
 
