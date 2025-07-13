@@ -1,4 +1,6 @@
-# MentraOS-Cloud-Example-App
+# Robot Status
+
+This is an application that is designed for the MentraOS platform to run on the Even Realities G1. This app has not been tested on any other device that works with the MentraOS app, but it may work on other devices with minimal changes. The goal of this app is to pipe data from servo temps and battery percentage from a humanoid robot such as the Unitree G1 EDU into the smartglasses heads up display.
 
 ### Install MentraOS on your phone
 
@@ -12,11 +14,11 @@ MentraOS install links: [mentra.glass/install](https://mentra.glass/install)
 
 3. [Use ngrok to make a static address/URL](https://dashboard.ngrok.com/)
 
-### Register your App with MentraOS
+### Register your version of Robot Status with MentraOS
 
 1. Navigate to [console.mentra.glass](https://console.mentra.glass/)
 
-2. Click "Sign In", and log in with the same account you're using for MentraOS
+2. Click "Sign In", and log into your Mentra account
 
 3. Click "Create App"
 
@@ -24,17 +26,13 @@ MentraOS install links: [mentra.glass/install](https://mentra.glass/install)
 
 5. For "Public URL", enter your Ngrok's static URL
 
-6. In the edit app screen, add the microphone permission
-
 ### Get your App running!
 
 1. [Install bun](https://bun.sh/docs/installation)
 
-2. Create a new repo from this template using the `Use this template` dropdown in the upper right or the following command: `gh repo create --template Mentra-Community/MentraOS-Cloud-Example-App`
+2. Make a fork of this repo
 
-    ![Create repo from template](https://github.com/user-attachments/assets/c10e14e8-2dc5-4dfa-adac-dd334c1b73a5)
-
-3. Clone your new repo locally: `git clone <your-repo-url>`
+3. Clone your fork of this repo locally: `git clone <your-repo-url>`
 
 4. cd into your repo, then type `bun install`
 
@@ -57,8 +55,13 @@ MentraOS install links: [mentra.glass/install](https://mentra.glass/install)
 
 ### Next Steps
 
-Check out the full documentation at [docs.mentra.glass](https://docs.mentra.glass/core-concepts)
+To extend the app further, read the Mentra SDK documentation at [docs.mentra.glass](https://docs.mentra.glass/core-concepts)
 
 #### Subscribing to events
 
-You can listen for transcriptions, translations, and other events within the onSession function.
+You can listen for events within the onSession function. You can use that to replace the on-screen variables with whatever you'd like.
+
+### NOTE
+
+All data displayed in the app currently is synthetic placeholder data meant to simulate live temperature changes on a humanoid robot.
+
